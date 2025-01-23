@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@media only screen and (max-width: 450px){
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+   /* Loading animation page css */
+   #loader {
+    overflow: hidden;
+   }
+    #loader h1 {
+    width: 100%;
+    height: 20vw;
+    border: none;
+    font-weight: 600;
+    overflow-x: hidden;
+   }
+   #loader h1 span {
+    font-size: 7vw;
+    overflow: hidden;
+   }
+   .span-text-color {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+   }
+
+   /* Navbar Responsive code */
+   #nav a {
+     color: rgb(5, 5, 5);
+     font-size: 3rem;
+     font-weight: 500;
+     padding: 20px 20px;
+     border-radius: 50px;
+   }
+
+   #nav {
+    background-color: #000;
+    width: 100vw;
+    display: flex;
+    justify-content:space-between;
+    padding: 0px 20px ;
+    margin-top: vw;
+   }
+   .hamburger {
+    margin-right: 20px;
+    margin-bottom: 15px;
+   }
+   .logo {
+    display: none;
+   }
+   .img-mobile-logo {
+    display: block;
+   }
+
+   .bars {
+    background-color: #fff;
+   }
+
+   /* HomePage Code */
+   #home {
+    background-color: rgb(12, 12, 12);
+    background-image: url("./public/Teenage\ Boy.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-Y: 55vw;
+    background-position-x: 70vw;
+    outline: none;
+    border: none;
+   }
+   .row {
+    width: 100%;
+   }
+   .inside-row {
+    margin-top: 30vw;
+   }
+   .row .inside-row .creativetext {
+    font-size: 5.3rem;
+    font-weight: 600;
+    color: #fff;
+   }
+   .text h5{
+    display: none;
+   }
+   .row .text img {
+     display: none;
+   }
+   .downbox {
+    margin-top: 0;
+   }
+   #downarrowbox img{
+    display: none;
+   }
+   .downbox {
+    flex-direction: column;
+   }
+   .web-h1 {
+    margin-right: -7rem ;
+    }
+   .web-h1 span{
+    font-size: 5rem;
+
+    
+   }
+  
+   .inside-row .devtext {
+    font-size: 4.2rem;
+    font-weight: 700;
+    color: #fff;
+   }
+   .btnsection {
+    margin-top: 25vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   }
+   .resumebtn {
+    text-align: center;
+    width: 35%;
+    height: 13vw;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: 5vw;
+    color: #fff;
+    margin-bottom: 10vw;
+   }
+
+   /* Info Section css Code */
+   #info-section {
+    flex-direction: column;
+    background-color: rgb(15, 15, 15);
+    background-image: url("./public/wave-moblie.svg");
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    color: #f8f5f5;
+    position: relative;
+   }
+   .info-left {
+    width: 100%;
+    height: 50vh;
+    padding: 0 1%;
+   }
+   .intro-name {
+    margin-top: 8rem;
+    font-size: 2rem;
+   }
+   .about-img {
+    height: 50vw;
+    position: absolute;
+    bottom: 45vw;
+    left: 50vw;
+    z-index: 10;
+   }
+   #auto-type {
+    color:#10af7d;
+    font-size: 1.5rem;
+   }
+   .intro-name span {
+    color: #fff;
+    font-size: 1rem;
+   }
+   .intro-desc {
+    font-size: 1rem;
+   }
+   .basic-skill {
+    margin-top: 5rem;
+    flex-direction: column;
+    width: 30%;
+    color: #000000;
+    text-align: center;
+   }
+   .basic-skill p {
+    padding: 5px 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .info-right {
+    width: 100%;
+    position: relative;
+    background-position:center ;
+    background-position-x: 25vw;
+    background-size: 60vw;
+   }
+   .info-right img {
+    position: absolute;
+    right: 0;
+    left :20vw;
+    top: 0vw;
+    display: none;
+   }
+
+   #bg-img-home {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  #bg-img-home img {
+    height: 10rem;
+    position: absolute; 
+    bottom: -30vw;
+  }
+
+}

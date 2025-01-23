@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Anubhav Singh</title>
+  </head>
+  <body>
+    <!-- Add this line near the top of your <body> tag -->
+    <div id="custom-cursor"></div>
+    
+    <header id="nav">
+      <div class="logo-img">
+        <img src="./public/logo1transparent.png" class="logo" alt="" />
+        <img src="./public/logo1.png" class="img-mobile-logo" alt="">
+      </div>
+      <div class="hamburger" id="menu-toggle">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle">
+          <div class="bars" id="bar1"></div>
+          <div class="bars" id="bar2"></div>
+          <div class="bars" id="bar3"></div>
+        </label>
+      </div>
+
+      <div class="menu" id="menu">
+        <ul>
+          <li>
+            <a href="#home" class="links">Home</a>
+            <span class="desc"><a href="#home">HOME</a></span>
+          </li>
+          <li>
+            <a href="#info-section" class="links">About</a>
+            <span class="desc"><a href="#info-section">ABOUT</a></span>
+          </li>
+          <li>
+            <a href="#projects" class="links">Project</a>
+            <span class="desc"><a href="#projects">PROJECT</a></span>
+          </li>
+          <li>
+            <a href="#skills"class="links">Skills</a>
+            <span class="desc"><a href="#skills">SKILLS</a></span>
+          </li>
+          <li>
+            <a href="#contact" class="links">Contact ME</a>
+            <span class="desc"><a href="#contact">CONTACT ME</a></span>
+          </li>
+        </ul>
+        <div class="menu-footer">
+          <div class="icon-div">
+            <img src="./public/turn-down.png" alt="">
+          </div>
+          <div class="email-link">
+            <a class= "email" #">anubhavsinghas9@gmail.com</a>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+
+    <div id="main">
+      <!--main div staring -->
+
+      <!--Loading Screen -->
+      <div id="loader">
+        <div id="top-heading">
+          <h5 class="reveal">Design portfolio</h5>
+          <h5 class="reveal">&copy; 2024</h5>
+        </div>
+        <h1 class="reveal">
+          <span>Anubhav</span>
+          <span class="span-text-color">singh</span>
+          <span>is</span>
+          <span>a</span>
+        </h1>
+
+        <!--Loading animation bottom-->
+        <div class="loader-animation reveal">
+          <div class="ui-loader loader-blk bottom-loader">
+            <svg viewBox="22 22 44 44" class="multiColor-loader">
+              <circle
+                cx="44"
+                cy="44"
+                r="20.2"
+                fill="none"
+                stroke-width="3.6"
+                class="loader-circle loader-circle-animation"
+              ></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div id="green"></div>
+
+      <!-- Home page design and Structure -->
+      <div id="home">
+        <div class="row">
+          <div class="inside-row">
+            <h1 class="reveal creativetext">Creative</h1>
+            <div class="text">
+              <img src="./public/blob.svg" alt="" />
+            </div>
+            <div class="text">
+              <h5 class="reveal">CURRENTYLY AVAILABLE FOR</h5>
+              <h5 class="reveal">FREELANCE WORLDWIDE</h5>
+            </div>
+          </div>
+
+          <div class="inside-row downbox">
+            <div class="reveal" id="downarrowbox">
+              <img src="./public/turn-down.png" alt="" />
+            </div>
+            <h1 class="web-h1">
+              <span class="reveal">W</span>
+              <span class="reveal">E</span>
+              <span class="reveal">B</span>
+            </h1>
+            <h1 class="reveal devtext">Developer</h1>
+          </div>
+
+          <div class="btnsection">
+            <button class="resumebtn" onclick="openResume()">Resume</button>
+            <button class="resumebtn" onclick="openContactForm()">
+              Contact
+            </button>
+          </div>
+        </div>
+
+        <div id="bg-img-home">
+          <img src="./public/wave2-down.svg" alt="" />
+        </div>
+      </div>
+
+      <!-- Personal Info Section -->
+      <div id="info-section">
+        <div class="info-left">
+          <img src="./public/boy.png" alt="" class="about-img" />
+          <div class="intro-name">
+            <h1>Hi, I'm</h1>
+            <h1>Anubhav Singh</h1>
+            <h1>
+              <span><</span>
+              <span id="auto-type"></span>
+              <span>/></span>
+            </h1>
+          </div>
+          <div class="intro-desc">
+            <h3>
+              I'm a passionate Full Stack developer with a love for creating
+              beautiful and intuitive user experiences.
+            </h3>
+          </div>
+
+          <div class="basic-skill">
+            <p>JavaScript</p>
+            <p>NodeJs</p>
+            <p>React</p>
+            <p>MongoDB</p>
+          </div>
+        </div>
+        <div class="info-right">
+          <img src="./public/Teenage Boy.png" alt="" />
+        </div>
+      </div>
+
+    
+
+      <div id="projects">
+        <div class="wrapp">
+          
+          <section class="work">
+
+            <div class="work_left">
+
+              <div class="work_text">
+
+                <div class="work_info">
+                  <div class="work_left-bl">
+                    <span class="work_link"><a href="#">UzumakiStore.com</a></span>
+                    <div class="title">
+                      <h2>Uzumaki Store <span></span></h2>
+                      <h3>e-commerce</h3>
+                    </div>
+                    <p class="desc">
+                      Website, Design, Development
+                    </p>
+                    <button class="c-button c-button--gooey">View more
+                      <div class="c-button__blobs">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      </div>
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="work_info">
+                  <div class="work_left-bl">
+                    <span class="work_link"><a href="#">UzumakiStore.com</a></span>
+                    <div class="title">
+                      <h2>Uzumaki Store <span></span></h2>
+                      <h3>e-commerce</h3>
+                    </div>
+                    <p class="desc">
+                      Website, Design, Development
+                    </p>
+                    <button class="c-button c-button--gooey">View more
+                      <div class="c-button__blobs">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      </div>
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="work_info">
+                  <div class="work_left-bl">
+                    <span class="work_link"><a href="#">UzumakiStore.com</a></span>
+                    <div class="title">
+                      <h2>Uzumaki Store <span></span></h2>
+                      <h3>e-commerce</h3>
+                    </div>
+                    <p class="desc">
+                      Website, Design, Development
+                    </p>
+                    <button class="c-button c-button--gooey">View more
+                      <div class="c-button__blobs">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      </div>
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="work_info">
+                  <div class="work_left-bl">
+                    <span class="work_link"><a href="#">UzumakiStore.com</a></span>
+                    <div class="title">
+                      <h2>Uzumaki Store <span></span></h2>
+                      <h3>e-commerce</h3>
+                    </div>
+                    <p class="desc">
+                      Website, Design, Development
+                    </p>
+                    <button class="c-button c-button--gooey">View more
+                      <div class="c-button__blobs">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      </div>
+                    </button>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                      <defs>
+                        <filter id="goo">
+                          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                          <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                        </filter>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+
+               
+
+              </div>
+            </div>
+
+
+            <div class="work_right">
+              <div class="work-right-bl">
+                <div class="work-photo">
+                  <div class="work-photo-item" title="1">
+                    <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+                  
+                  <div class="work-photo-item" title="2">
+                    <img src="https://images.pexels.com/photos/1851164/pexels-photo-1851164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                  </div> 
+
+                  <div class="work-photo-item" title="3">
+                    <img src="https://images.pexels.com/photos/1784578/pexels-photo-1784578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  </div>
+
+                  <div class="work-photo-item" title="4">
+                    <img src="https://images.pexels.com/photos/3550269/pexels-photo-3550269.jpeg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div class="spacer"></div>
+         </div>
+      </div>
+
+      <div id="skills">
+       
+        <div class="skill-set-wrapper">
+          <div class="skill-heading">
+            <h1>My Expertise</h1>
+          </div>
+          <div class="skill-set-container">
+            <div class="skill-set">
+              <h1>Frontend <br> Development</h1>
+              <h2>HTML</h2>
+              <h2>CSS</h2>
+              <h2>JavaScript</h2>
+              <h2>React</h2>
+            </div>
+            <div class="skill-set">
+              <h1>Backend <br> Development</h1>
+              <h2>NodeJS</h2>
+              <h2>ExpressJS</h2>
+              <h2>MongoDB</h2>
+              <h2>MySQL</h2>
+            </div>
+            <div class="skill-set">
+              <h1>Other Skills</h1>
+              <h2>Git</h2>
+              <h2>GitHub</h2>
+              <h2>Bootstrap</h2>
+              <h2>TailwindCSS</h2>
+              <h2>Visual Studio Code</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact">
+                 
+      </div>
+
+      <!-- Cursor moving division -->
+    </div>
+    <!--main div ending -->
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
+  </body>
+</html>
