@@ -6,6 +6,7 @@
     <link rel="icon" href="./favicon.png" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./mobile.css" />
+    <link rel="stylesheet" href="./contactform.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
@@ -19,7 +20,8 @@
     
     <header id="nav">
       <div class="logo-img">
-        <img src="./public/logo1transparent.png" class="logo" alt="" />
+        <!-- <img src="./public/logo1transparent.png" class="logo" alt="" /> -->
+         <h1>AD</h1>
         <img src="./public/logo1.png" class="img-mobile-logo" alt="">
       </div>
       <div class="hamburger" id="menu-toggle">
@@ -364,7 +366,24 @@
       </div>
 
       <div id="contact">
-                 
+        <div class="contact-container">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+              <div class="contact-left-title">
+                  <h2>Get in touch</h2>
+                  <hr>
+              </div>
+              <input type="hidden" name="access_key" value="0c7a8304-68cd-4e19-9403-5596e82456a7">
+              <input type="text" name="name" placeholder="Your name" class="contact-input" required>
+              <input type="email" name="email" placeholder="Your email" class="contact-input" required>
+              <textarea name="message" id="" placeholder="Your Message" required class="contact-input"></textarea>
+              <button type="submit">Submit <img src="./public/arrow_icon.png" alt="">
+              </button>
+          </form>
+  
+          <div class="contact-right">
+              <img src="./public/right_img.png" alt="">
+          </div>
+      </div> 
       </div>
 
       <!-- Cursor moving division -->
